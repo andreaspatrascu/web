@@ -1,69 +1,73 @@
-/* Configuración base del cuerpo */
-body {
-    font-family: 'Inter', sans-serif;
-    background-color: #f7f7f7;
-    color: #1f2937;
-    margin: 0;
-    padding: 0;
-    /* Flexbox para mantener el footer abajo */
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
 
-/* Encabezado */
-header {
-    background-color: #002b5b;
-    color: white;
-    text-align: center;
-    /* El padding se controla mejor desde las clases de Tailwind en el HTML, 
-       pero dejamos esto como respaldo */
-    padding: 20px 0; 
-}
+      body {
+        background-color: #eaf2ff; 
+        color: #1c1c1c; 
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
 
-/* Estilos de Texto */
-h1 {
-    color: white;
-}
+      /* Encabezado */
+      header {
+        background-color: #002b5b;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+      }
 
-h2 {
-    color: #004a99;
-}
+      /* Títulos */
+      h1 {
+        color: white;
+      }
 
-h3 {
-    color: #0066cc;
-}
+      h2 {
+        color: #004a99;
+      }
 
-/* Área principal */
-main {
-    flex-grow: 1; /* Esto empuja el footer hacia abajo */
-    /* El padding y display se controlan principalmente con Tailwind en el HTML */
-}
+      h3 {
+        color: #0066cc;
+      }
 
-/* Botones animados */
-.animated-button {
-    transition: all 0.3s ease-in-out;
-}
+      /* Pie de página */
+      footer {
+        background-color: #002b5b;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        margin-top: 20px;
+      }
 
-.animated-button:hover {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
-    transform: translateY(-2px) scale(1.05);
-}
+      footer a {
+        color: #FF69B4;
+        text-decoration: none;
+      }
 
-/* Pie de página */
-footer {
-    background-color: #002b5b; /* Coincide con tu CSS original */
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: auto; /* Asegura que se quede al final */
-}
+      main {
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+      }
 
-/* Clases de utilidad adicionales si fueran necesarias para maquetación antigua */
-aside {
-    width: 30%;
-}
+      aside {
+        width: 30%;
+      }
 
-section {
-    margin-bottom: 20px;
-}
+      section {
+        width: 60%;
+      }
+   
+      .barbuttons{
+        text-decoration: none;
+        padding: 1%;
+        border: 10px;
+        border-color: black;
+        background-color: #002b5b;
+        color: #eaf2ff;
+        border-radius: 10px;
+
+      }
+
+      .barbuttons:hover{
+        color: black;
+        background-color: white;
+      }
