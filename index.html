@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Web de anime</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+  <!-- Sección de usuario flotante -->
+  <section class="datos-usuario"></section>
+
+  <header>
+    <h1>Web de anime</h1>
+  </header>
+
+  <nav style="text-align: center;">
+    <br>
+    <a class="barbuttons" href="modulo1 copy.html">Aplicaciones Web</a>
+    <a class="barbuttons" href="modulo2 copy.html">Servicios en Red</a>
+    <a class="barbuttons" href="modulo3 copy.html">Proyecto Intermodular</a>
+    <a class="barbuttons" href="modulo4 copy.html">Tutoria</a>
+  </nav>
+
+  <main>
+    <aside>
+      <h3>Sobre mi</h3>
+      <img src="a.png" width="150px">
+      <p>El anime mola mucho, ¡VIVA EL ANIMEEEEE!!</p>
+      <h2>Cositas sobre mi</h2>
+      <p>Soy guapo, estudio informática, veo anime, mis mejores amigos, bueno hermanos, son Mario y Erik.</p>
+    </aside>
+    <section>
+      <article>
+        <h2>Noticias TIC</h2>
+        <img src="ia.png" width="400px">
+        <br>
+        <time datetime="2025-07-10" pubdate></time>
+        <i>Publicado el jueves 10 de Julio de 2025.</i>
+        <h3>Un hito en la medicina: un robot extirpa una vesícula sin ayuda humana y entrenado por vídeos y ChatGPT</h3>
+        <br>
+        <p>Si bien se trata de una prueba de concepto realizada en modelos de cerdo 'ex vivo', los investigadores aseguran que esta intervención supone un “avance transformador” en la robótica quirúrgica. El robot, durante la operación, respondió y aprendió de las órdenes verbales del equipo, como un cirujano residente que trabaja con un mentor.</p>
+        <a href="https://www.20minutos.es/tecnologia/actualidad/un-hito-medicina-un-robot-opera-vesicula-inteligencia-artificial-sin-ayuda-humana5730170-5730170/">Pincha aquí para más información</a>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>Andreas Massimo Patrascu Clemente</p>
+    <br>
+    Para contactarnos: <a href="mailto:andreas.patrascu@iesangelsanzbriz.net">andreas.patrascu@iesngelsanzbriz.net</a>
+  </footer>
+
+  <!-- Script para pedir datos y mostrarlos -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      // Pedimos nombre y mostramos alert
+      var nombre = prompt("Introduce tu nombre:");
+      if (nombre) alert("¡Bienvenido " + nombre + "!");
+
+      // Pedimos el resto de datos
+      var apellidos = prompt("Introduce tus apellidos:");
+      var correo = prompt("Introduce tu correo electrónico:");
+      var edad = prompt("Introduce tu edad:");
+
+      // Creamos contenido para mostrar en la sección
+      var contenido = "";
+      if (nombre) contenido += "<p><strong>Nombre:</strong> " + nombre + "</p>";
+      if (apellidos) contenido += "<p><strong>Apellidos:</strong> " + apellidos + "</p>";
+      if (correo) contenido += "<p><strong>Correo:</strong> " + correo + "</p>";
+      if (edad) contenido += "<p><strong>Edad:</strong> " + edad + " años</p>";
+
+      // Insertamos en la sección .datos-usuario
+      var caja = document.querySelector(".datos-usuario");
+      caja.innerHTML = contenido;
+    });
+  </script>
+</body>
+</html>
+
